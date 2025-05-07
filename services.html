@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RB Barber Shop - Our Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <div id="root"></div>
+
+    <script type="module">
+        import React from 'react';
+        import ReactDOM from 'react-dom';
+
+        const services = [
+            {
+                title: 'Hair Cut',
+                image: 'trying/haircut.jpg',
+                price: 'From NPR 300',
+                description: 'Get a fresh and stylish haircut tailored to your preferences.'
+            },
+            {
+                title: 'Hair Curl',
+                image: 'trying/haircurl.jpg',
+                price: 'From NPR 1000',
+                description: 'Transform your look with our professional hair curling service.'
+            },
+            {
+                title: 'Hair Washing',
+                image: 'trying/hairwash.jpg',
+                price: 'From NPR 100',
+                description: 'Enjoy a refreshing and rejuvenating hair washing experience.'
+            }
+        ];
+
+        const BarberShopServices = () => {
+            return (
+                <div className='container mx-auto p-8'>
+                    <h2 className='text-3xl font-bold mb-6 text-center'>Our Services</h2>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+                        {services.map((service, index) => (
+                            <div key={index} className='bg-white p-4 rounded-lg shadow-md'>
+                                <img src={service.image} alt={service.title} className='w-full h-auto rounded mb-4' />
+                                <h3 className='text-xl font-bold mb-2'>{service.title}</h3>
+                                <p className='text-orange-500 font-bold'>{service.price}</p>
+                                <p className='text-sm mt-2'>{service.description}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            );
+        };
+
+        ReactDOM.createRoot(document.getElementById('root')).render(<BarberShopServices />);
+    </script>
+</body>
+</html>
+

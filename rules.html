@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop Rules and Regulations</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <style>
+       .background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+
+body {
+    background-color: rgba(0, 0, 0, 0.8); 
+   color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header {
+    background-color: transparent;
+    position: fixed !important; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+section {
+    position: relative;
+    z-index: 1;
+}
+        .navbar {
+            background-color: transparent;
+            padding: 10px 20px;
+            font-size: 48px;
+        }
+        .home-icon {
+            color: white;
+            font-size: 48px;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: transparent;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff4000;
+            font-size: 48px;
+        }
+        .rules-list {
+            list-style: none;
+            padding: 0;
+        }
+        .rules-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            background-color: transparent;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 28px;
+        }
+        .icon {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .chatbox {
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    background: #0077cc;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 9999;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .social-icons {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 9999;
+  }
+
+  .social-icons a {
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 14px;
+    font-size: 24px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .social-icons a.whatsapp {
+    background-color: #00e231;
+  }
+
+  .social-icons a.messenger {
+    background-color: #0084ff;
+  }
+  .social-icons a.instagram{
+    background-color: purple;
+  }
+  
+    </style>
+</head>
+<body>
+    <video autoplay loop muted playsinline class="background-video">
+        <source src="trying/back1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="navbar">
+        <a href="index.html" class="home-icon">🏠</a>
+    </div>
+    <div class="container">
+        <h1 >Barbershop Rules and Regulations</h1>
+        <ul class="rules-list">
+            <li><span class="icon">✔️</span> Arrive on time for your appointment.</li>
+            <li><span class="icon">✔️</span> Maintain personal hygiene before your visit.</li>
+            <li><span class="icon">✔️</span> Respect the barber and other clients.</li>
+            <li><span class="icon">✔️</span> Inform the barber bringing any changes to your hairstyle as well as the beards.</li>
+            <li><span class="icon">⚠️</span> Avoid using your phone during your haircut.</li>
+            <li><span class="icon">⚠️</span> Inform the barber if you’re running late.</li>
+            <li><span class="icon">⚠️</span> No food or drinks inside the barbershop.</li>
+            <li><span class="icon">⚠️</span> Any kind of Smoking activity is strongly prohibited in the barbershop.</li>
+            <li><span class="icon">⚠️</span> Inform the barber if you have any kind of skin senitivities or allergies</li>
+            <li><span class="icon">⚠️</span> Some of the barbershops may require parental concern for minors.</li>
+        </ul>
+    </div>
+</section>
+<div class="chatbox" onclick="toggleIcons()">
+    <i class="fas fa-comment-dots"></i>
+  </div>
+  
+  
+  <div class="social-icons" id="socialIcons">
+    <a href="https://wa.me/9779826105262" class="whatsapp" target="_blank" title="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://m.me/yourpageusername" class="messenger" target="_blank" title="Chat on Messenger">
+      <i class="fab fa-facebook-messenger"></i>
+    </a>
+    <a href="https://m.me/yourusername" class="instagram" target="_blank" title="Chat on Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+  
+  <script>
+    function toggleIcons() {
+      const icons = document.getElementById("socialIcons");
+      icons.style.display = icons.style.display === "flex" ? "none" : "flex";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial scale="1.0">
+        <title>Barber Shop</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    </head>
+    <body>
+        <video autoplay loop muted playsinline class="background-video">
+            <source src="trying/back1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    
+        <header >
+            <div class="container mx-auto flex justify-between items-center ">
+                <div class="flex items-center">
+                    <img src="trying/logo.png" alt="Levels Club Pokhara Logo" class="h-12 mr-4">
+                    <h1 class="text-2xl font-bold hover:text-orange-500 text-white"><a href="index.html">RB Barber Shop</a></h1>
+                </div>
+                <div class="container mx-auto px-4 text-center ">
+                    <nav class="flex justify-center space-x-8 text-lg font-bold mb-8">
+                        <a href="index.html" class="hover:text-orange-500 font-bold text-2xl text-white">Home</a>
+                        <a href="about.html" class="hover:text-orange-500 font-bold text-2xl text-white">About</a>
+                        <a href="event.html" class="hover:text-orange-500 font-bold text-2xl text-white">Services</a>
+                        <a href="reels.html" class="hover:text-orange-500 font-bold text-2xl text-white">Gallery</a>
+                        <a href="faq.html" class="hover:text-orange-500 font-bold text-2xl text-white">FAQs</a>
+                        <a href="contact.html" class="hover:text-orange-500 font-bold text-2xl text-white">Contact</a>
+                    </nav>
+                </div>
+                <div class="relative">
+                    <button id="dashboardButton" class="text-orange text-2xl focus:outline-none">
+                        <i class="bi bi-list" style="color: white; font-weight: bold; font-size: 30px;"></i>
+
+                    </button>
+                    <div id="dashboardMenu" class="hidden absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg z-50">
+                        <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                        <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                            <i class="fas fa-bars"></i> Services
+                        </a>
+                        <a href="book.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                            <i class="fas fa-calendar-check"></i> Book your table
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="flex items-center justify-center h-screen ">
+        <h2 class=" mt-24 text-6xl font-bold uppercase tracking-wide text-orange-500 inline-block px-4 py-2 align-items: center">
+            <span class="bounce text-white drop-shadow">W</span>
+            <span class="bounce text-white drop-shadow">e</span>
+            <span class="bounce text-white drop-shadow">l</span>
+            <span class="bounce text-white drop-shadow">c</span>
+            <span class="bounce text-white drop-shadow">o</span>
+            <span class="bounce text-white drop-shadow">m</span>
+            <span class="bounce text-white drop-shadow">e</span>
+            <span class="bounce text-white drop-shadow">&nbsp;</span>
+            <span class="bounce text-white drop-shadow">t</span>
+            <span class="bounce text-white drop-shadow">o</span>
+            <span class="bounce text-white drop-shadow">&nbsp;</span>
+            <span class="bounce text-white drop-shadow">R</span>
+            <span class="bounce  text-white drop-shadow">B</span>
+            <span class="bounce text-white drop-shadow">&nbsp;</span>
+            <span class="bounce text-white drop-shadow">B</span>
+            <span class="bounce text-white drop shadow">a</span>
+            <span class="bounce text-white drop shadow">r</span>
+            <span class="bounce text-white drop shadow">b</span>
+            <span class="bounce text-white drop shadow">e</span>
+            <span class="bounce text-white drop shadow">r</span>
+            <span class="bounce text-white drop shadow">&nbsp;</span>
+            <span class="bounce text-white drop shadow">S</span>
+            <span class="bounce text-white drop shadow">h</span>
+            <span class="bounce text-white drop shadow">o</span>
+            <span class="bounce text-white drop shadow">p</span>
+
+        </h2>
+        </div>
+        <section class="pt-20 ">
+            <div class="container mx-auto max-w-4xl bg-white-800 p-6 rounded  ">
+                <h2 class="text-3xl font-bold mb-6 text-center">Our Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white-700 p-4 rounded-lg  ">
+                        <img src="trying/haircut.jpg" alt="Hair Cut" class="w-full h-auto rounded mb-4">
+                        <h3 class="text-xl font-bold mb-2">Hair Cut</h3>
+                        <p class="text-orange-500 font-bold">From NPR 300</p>
+                        <p class="text-sm mt-2">Get a fresh and stylish haircut tailored to your preferences.</p>
+                    </div>
+                    <div class="bg-white-700 p-4 rounded-lg ">
+                        <img src="trying/haircurl.jpg" alt="Hair Curl" class="w-full h-auto rounded mb-4">
+                        <h3 class="text-xl font-bold mb-2">Hair Curl</h3>
+                        <p class="text-orange-500 font-bold">From NPR 1000</p>
+                        <p class="text-sm mt-2">Transform your look with our professional hair curling service.</p>
+                    </div>
+                    <div class="bg-white-700 p-4 rounded-lg   ">
+                        <img src="trying/hairwash.jpg" alt="Hair Wash" class="w-full h-auto rounded mb-4">
+                        <h3 class="text-xl font-bold mb-2">Hair Washing</h3>
+                        <p class="text-orange-500 font-bold">From NPR 100</p>
+                        <p class="text-sm mt-2">Enjoy a refreshing and rejuvenating hair washing experience.</p>
+                    </div>
+                    <div class="bg-white-700 p-4 rounded-lg ">
+                        <img src="trying/beardtrim.jpg" alt="Beard Trim" class="w-full h-auto rounded mb-4">
+                        <h3 class="text-xl font-bold mb-2">Beard Trim</h3>
+                        <p class="text-orange-500 font-bold">From NPR 200</p>
+                        <p class="text-sm mt-2">Keep your beard sharp and well-groomed with our trimming service.</p>
+                    </div>
+                    <div class="bg-white-700 p-4 rounded-lg  ">
+                        <img src="trying/shaving.jpg" alt="Shaving" class="w-full h-auto rounded mb-4">
+                        <h3 class="text-xl font-bold mb-2">Shaving</h3>
+                        <p class="text-orange-500 font-bold">From NPR 150</p>
+                        <p class="text-sm mt-2">Experience a clean and smooth shave with our expert barbers.</p>
+                    </div>
+                    <div class="bg-white-700 p-4 rounded-lg ">
+                        <img src="trying/hairrebond.jpg" alt="Hair Rebonding" class="w-full h-auto rounded mb-4">
+                        <h3 class="text-xl font-bold mb-2">Hair Rebonding</h3>
+                        <p class="text-orange-500 font-bold">From NPR 2000</p>
+                        <p class="text-sm mt-2">Achieve sleek and straight hair with our professional rebonding service.</p>
+                    </div>
+                    <div class="bg-white-700 p-4 rounded-lg ">
+                        <img src="trying/haircolor.jpg" alt="Hair Coloring" class="w-full h-auto rounded mb-4">
+                        <h3 class="text-xl font-bold mb-2">Hair Coloring</h3>
+                        <p class="text-orange-500 font-bold">From NPR 2000</p>
+                        <p class="text-sm mt-2">Achieve sleek and straight hair with our professional rebonding service.</p>
+                    </div>
+                </div>
+            </div>
+                </section>
+            <div class="chatbox" onclick="toggleIcons()">
+                <i class="fas fa-comment-dots"></i>
+              </div>
+              
+              
+              <div class="social-icons" id="socialIcons">
+                <a href="https://wa.me/9779826105262" class="whatsapp" target="_blank" title="Chat on WhatsApp">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://m.me/yourpageusername" class="messenger" target="_blank" title="Chat on Messenger">
+                  <i class="fab fa-facebook-messenger"></i>
+                </a>
+                <a href="https://m.me/yourusername" class="instagram" target="_blank" title="Chat on Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+              
+              <script>
+                function toggleIcons() {
+                  const icons = document.getElementById("socialIcons");
+                  icons.style.display = icons.style.display === "flex" ? "none" : "flex";
+                }
+              </script>
+               <section id="location" class="mt-8 flex flex-col items-center text-center ">
+                <h2 class="text-2xl text-white font-bold mb-4"></h2>
+                <div class="location-photo">
+                    <p class="text-white mt-2"></p>
+                </div>
+                <section id="location" class="mt-8 flex flex-col items-center text-center ">
+                    <h2 class="text-2xl text-white font-bold mb-4">Our Location</h2>
+                    <div class="location-photo">
+                        <p class="text-white mt-2">Find us at Pokhara, Pokhara-1,Harichowk</p>
+                    </div>
+                    <div class="container mt-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3514.798860666945!2d83.98068452548662!3d28.24378407587926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srb%20barber%20shop!5e0!3m2!1sen!2snp!4v1746601487224!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  width="1400" 
+                            height="500" 
+                            class="rounded shadow-lg"
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </section>
+               </section>
+                <script>
+          
+      
+                    const dashboardButton = document.getElementById('dashboardButton');
+          const dashboardMenu = document.getElementById('dashboardMenu');
+          
+          
+          dashboardButton.addEventListener('click', () => {
+              dashboardMenu.classList.toggle('hidden');
+          });
+          
+          document.addEventListener('click', (event) => {
+              if (!dashboardButton.contains(event.target) && !dashboardMenu.contains(event.target)) {
+                  dashboardMenu.classList.add('hidden');
+              }
+          });
+          </script>
+          <footer class="bg-black text-white py-8">
+            <div class="container mx-auto px-4 text-center">
+                <nav class="flex justify-center space-x-8 text-lg font-bold mb-8">
+                    <a href="index.html" class="hover:text-orange-500">Home</a>
+                    <a href="about.html" class="hover:text-orange-500">About</a>
+                    <a href="event.html" class="hover:text-orange-500">Services</a>
+                    <a href="reels.html" class="hover:text-orange-500">Gallery</a>
+                    <a href="faq.html" class="hover:text-orange-500">FAQs</a>
+                     <a href="contact.html" class="hover:text-orange-500">Contact</a>
+                </nav>
+            </div>
+            <div class="container mx-auto px-4 text-center">
+                <img src="gallery/logo.png" alt="Barber Logo" class="h-16 mx-auto mb-4">
+                <h3 class="text-xl font-bold">RB Barber Shop</h3>
+                <p class="text-lg flex items-center justify-center">
+                 <i class="fas fa-map-marker-alt text-orange-500 mr-2"></i> 
+                <a href="https://maps.app.goo.gl/rhhoynFXe3spq2J56" target="_blank" class="hover:text-orange-500">
+               Pokhara-1, Harichowk
+                 </a>
+                </p>
+            </div>
+            <div class="container mx-auto px-4 text-center mt-8">
+                <h3 class="text-xl font-bold mb-4">Contact Number</h3>
+                <p class="text-lg flex items-center justify-center">
+                    <a href="tel:9826105262" class="flex items-center hover:text-orange-500">
+                        <i class="fas fa-phone-alt text-orange-500 mr-2"></i> 9826105262
+                    </a>
+                </p>
+            </div>
+            <div class="container mx-auto px-4 text-center mt-8">
+                <h3 class="text-xl font-bold mb-4">Email Us</h3>
+                <p class="text-lg flex items-center justify-center">
+                    <a href="mailto:rabingadal123@gmail.com" class="flex items-center hover:text-orange-500">
+                        <i class="fas fa-envelope text-orange-500 mr-2"></i> rabingadal123@gmail.com
+                    </a>
+                </p>
+            </div>
+        
+            <div class="container mx-auto px-4 text-center mt-8">
+                <h3 class="text-xl font-bold mb-4">Opening Hours</h3>
+                <p class="text-lg flex items-center justify-center">
+                    <i class="fas fa-clock text-orange-500 mr-2"></i> 08 AM - 07 PM (Everyday)
+                </p>
+            </div>
+        
+            <div class="container mx-auto px-4 mt-8 flex justify-center space-x-6">
+                <a href="https://www.facebook.com/profile.php?id=61567808766807" class="text-white  text-3xl :text-orange-500" style="background-color: blue; border-radius: 50%;">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/r.bbarbershop/" class="text-white  text-3xl hover:text-orange-500" style="background-color: purple ; border-radius: 50%;">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@levelsclub_pokhara" class="text-white text-3xl hover:text-orange-500" style="background-color: black;">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        
+            <div class="container mx-auto px-4 mt-8 text-center text-2xl">
+                <p>&copy; 2025 RB Barber Shop. All Rights Reserved. <a href="rules.html" class="hover:text-orange-500">Rules and Regulations </a>|<a href="terms.html" class="hover:text-orange-500">Terms & Conditions</a> | <a href="privacy.html" class="hover:text-orange-500">Privacy Policy</a>
+                </div>
+        </footer>
+        
+            </body>
+            </html>

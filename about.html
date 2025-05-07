@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About RB Barber Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <video autoplay loop muted playsinline class="background-video">
+        <source src="trying/back1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <header >
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="trying/logo.png" alt="Levels Club Pokhara Logo" class="h-12 mr-4">
+                <h1 class="text-2xl font-bold hover:text-orange-500 text-white"><a href="index.html">RB Barber Shop</a></h1>
+            </div>
+            <div class="container mx-auto px-4 text-center">
+                <nav class="flex justify-center space-x-8 text-lg font-bold mb-8">
+                    <a href="index.html" class="hover:text-orange-500 font-bold text-2xl text-white">Home</a>
+                    <a href="about.html" class="hover:text-orange-500 font-bold text-2xl text-white">About</a>
+                    <a href="event.html" class="hover:text-orange-500 font-bold text-2xl text-white">Services</a>
+                    <a href="reels.html" class="hover:text-orange-500 font-bold text-2xl text-white">Gallery</a>
+                    <a href="faq.html" class="hover:text-orange-500 font-bold text-2xl text-white">FAQs</a>
+                    <a href="contact.html" class="hover:text-orange-500 font-bold text-2xl text-white">Contact</a>
+                </nav>
+            </div>
+            <div class="relative">
+                <button id="dashboardButton" class="text-orange text-2xl focus:outline-none">
+                    <i class="bi bi-list" style="color: white; font-weight: bold; font-size: 30px;"></i>
+
+                </button>
+                <div id="dashboardMenu" class="hidden absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg z-50">
+                    <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                    <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                        <i class="fas fa-bars"></i> Services
+                    </a>
+                    <a href="book.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                        <i class="fas fa-calendar-check"></i> Book your table
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="p-10">
+        <div class="max-w-4xl mx-auto  shadow-md rounded-2xl p-8" style="background-color: transparent;">
+            <h1 class="text-3xl font-bold mb-6">About RB Barber Shop</h1>
+
+            <section class="mb-6">
+                <h2 class="text-3xl font-semibold mb-2">Our Story</h2>
+                <p class="text-xl">
+                    Welcome to <strong>RB Barber Shop</strong>, your premier barbershop located at <strong>Pokhara-1, Harichowk</strong>.
+                    Owned and operated by <strong>Rabin Gadal</strong>, a highly experienced senior barber with a passion for
+                    modern and traditional haircuts. We pride ourselves in offering a relaxed, welcoming atmosphere where 
+                    each client is treated with the utmost care and attention. Our mission is to ensure you leave our shop 
+                    looking and feeling your best.
+                </p>
+            </section>
+
+            <section class="mb-6">
+                <h2 class="text-3xl font-semibold mb-2">Our Team</h2>
+
+                <div class="mb-4">
+                    <h3 class="text-2xl font-semibold">Rabin Gadal - Senior Barber & Owner</h3>
+                    <p class="text-xl">
+                        With over a decade of experience in the barbering industry, Rabin specializes in classic cuts, 
+                        modern styles, and precision grooming. His attention to detail and commitment to excellence have 
+                        built him a loyal client base. Rabin believes that a great haircut is not just about style, 
+                        but also about the experience and confidence it brings.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-semibold">Amrit - Junior Barber</h3>
+                    <p class="text-xl">
+                        Amrit is a talented junior barber with a growing reputation for quality cuts and attention to detail. 
+                        Under the guidance of Rabin, he is learning the fine art of barbering, mastering various styles and 
+                        techniques. His enthusiasm for the craft and dedication to customer satisfaction make him a valuable 
+                        part of the team.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-semibold mb-2">Visit Us</h2>
+                <p class="text-xl">
+                    We are conveniently located at <strong>Pokhara-1, Harichowk</strong>, a prime spot in the heart of the city.
+                    Whether you are looking for a quick trim, a full grooming session, or a fresh new style, our team is here 
+                    to serve you. Walk-ins are always welcome, and appointments are encouraged to secure your preferred time.
+                </p>
+                <section id="location" class="mt-8 flex flex-col items-center text-center">
+                    <h2 class="text-2xl text-white font-bold mb-4">Our Location</h2>
+                    <div class="location-photo">
+                        <p class="text-white mt-2">Find us at Pokhara, Pokhara-1,Harichowk</p>
+                    </div>
+                    <div class="container mt-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3514.798860666945!2d83.98068452548662!3d28.24378407587926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srb%20barber%20shop!5e0!3m2!1sen!2snp!4v1746601487224!5m2!1sen!2snp" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  width="1400" 
+                            height="500" 
+                            class="rounded shadow-lg"
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </div>
+<style>
+    
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+
+body {
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header {
+    background-color: transparent;
+    position: fixed !important; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+</style>
+</body>
+</html>
